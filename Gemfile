@@ -17,6 +17,7 @@ gem 'faraday'
 
 group :development do
   gem "web-console"
+  gem 'figaro'
 end
 
 group :test do
@@ -29,7 +30,6 @@ group :test do
   gem 'simplecov'
   gem "selenium-webdriver"
   gem "webdrivers"
-  gem 'figaro'
   gem 'vcr'
   gem 'webmock'
 end
