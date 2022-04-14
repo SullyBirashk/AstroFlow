@@ -1,7 +1,7 @@
-class BackendService
+class MoonService
   class << self
 
-    def user_call #
+    def moon_call #moonphases.api
       response = conn.get("sumthin")
       parse_data(response)
     end
@@ -9,7 +9,7 @@ class BackendService
   private
 
     def conn
-      Faraday.new(url: "our_backend", params: {astro_api_key: ENV['api_key']})
+      Faraday.new(url: "https://moon/stuff", params: {moon_api_key: ENV['api_key']})
     end
 
     def parse_data(response)
